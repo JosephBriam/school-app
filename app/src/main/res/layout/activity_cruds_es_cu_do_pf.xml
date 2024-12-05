@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vistas.CrudsEsCuDoPf">
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="439dp"
+        android:layout_height="1227dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.192"
+        app:srcCompat="@drawable/fondo_admin" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="383dp"
+        android:layout_height="696dp"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible">
+
+        <ImageView
+            android:id="@+id/imageViewLogo4"
+            android:layout_width="match_parent"
+            android:layout_height="109dp"
+            app:srcCompat="@drawable/palasatenea" />
+
+        <TextView
+            android:id="@+id/textViewCursos2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:background="#F48819"
+            android:text="Gestion"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bienvenido"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ADMINISTRADOR"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <Button
+            android:id="@+id/btnVerEstadisticas2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF9800"
+            android:onClick="dirCrudEstudiantes"
+            android:text="Gestionar Estudiantes" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <Button
+            android:id="@+id/btnVerEstadisticas3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0C2172"
+            android:onClick="dirCrudDocentes"
+            android:text="Gestionar Docentes" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="21dp" />
+
+        <Button
+            android:id="@+id/btnVerEstadisticas4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#673AB7"
+            android:onClick="dirCrudCursos"
+            android:text="Gestionar Cursos" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="19dp" />
+
+        <Button
+            android:id="@+id/btnVerEstadisticas5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#2C80EE"
+            android:onClick="dirCrudApoderados"
+            android:text="Gestionar Apoderados" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="27dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EA7903"
+            android:backgroundTint="#E4EA7903"
+            android:text="Comunicación"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="11dp" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Redes Sociales"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/btnFb"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#00FFFFFF"
+                android:onClick="openFacebook"
+                app:srcCompat="@drawable/fb" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/btnIg"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#00FFFFFF"
+                android:onClick="openInstagram"
+                app:srcCompat="@drawable/ig" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/btnYt"
+                android:layout_width="30dp"
+                android:layout_height="78dp"
+                android:layout_weight="1"
+                android:backgroundTint="#00FFFFFF"
+                android:onClick="openYouTube"
+                app:srcCompat="@drawable/yt" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/btnFb4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#00FFFFFF"
+            android:onClick="openFacebook"
+            app:srcCompat="@drawable/fb" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/btnIg4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#00FFFFFF"
+            android:onClick="openInstagram"
+            app:srcCompat="@drawable/ig" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/btnYt4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#00FFFFFF"
+            android:onClick="openYouTube"
+            app:srcCompat="@drawable/yt" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_weight="1" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="17dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button22"
+        android:layout_width="83dp"
+        android:layout_height="35dp"
+        android:backgroundTint="#E88115"
+        android:onClick="Regresar"
+        android:text="Salir"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

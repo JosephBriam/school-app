@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDEFC8"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:src="@drawable/escudo_palasatenea" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
+
+    <EditText
+        android:id="@+id/tituloAnuncio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Título del anuncio"
+        android:inputType="text" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
+
+    <EditText
+        android:id="@+id/descripcionAnuncio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Descripción del anuncio"
+        android:inputType="textMultiLine"
+        android:minLines="3" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
+
+    <!-- Campo para mostrar la fecha -->
+    <TextView
+        android:id="@+id/tvFechaAnuncio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fecha del anuncio"
+        android:text="Fecha: Ninguna" />
+
+    <!-- Botón para seleccionar la fecha -->
+    <Button
+        android:id="@+id/btnSeleccionarFecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#4C2397"
+        android:text="Seleccionar Fecha" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="24dp" />
+
+    <!-- Botón para crear el anuncio -->
+    <Button
+        android:id="@+id/btnCrearAnuncio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#4C2397"
+        android:text="Crear Anuncio" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="24dp" />
+
+    <!-- ListView para mostrar los anuncios -->
+    <ListView
+        android:id="@+id/listViewAnuncios"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="139dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#4C2397"
+        android:onClick="RegresarPaginaAnterior"
+        android:text="Regresar" />
+</LinearLayout>

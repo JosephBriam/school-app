@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vistas.CrudEstudiantes">
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="476dp"
+        android:layout_height="822dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/gestionar_estudiante" />
+
+    <LinearLayout
+        android:layout_width="375dp"
+        android:layout_height="691dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageViewLogo5"
+            android:layout_width="match_parent"
+            android:layout_height="109dp"
+            app:srcCompat="@drawable/palasatenea" />
+
+        <TextView
+            android:id="@+id/textViewCursos4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:background="#F48819"
+            android:text="Gestion Estudiantes"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="17dp" />
+
+        <Button
+            android:id="@+id/btnSelectDate2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gestionest"
+            android:onClick="frmManInsertEst"
+            android:text="Registrar Estudiantes"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="@null" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="17dp" />
+
+        <Button
+            android:id="@+id/btnSelectDate3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gestionest"
+            android:onClick="frmManListEst"
+            android:text="Listar Estudiantes"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="@null"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="17dp" />
+
+        <Button
+            android:id="@+id/btnSelectDate4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gestionest"
+            android:onClick="frmManActuatEst"
+            android:text="Modificar Estudiantes"
+            android:textColor="#FDFDFD"
+            app:backgroundTint="@null"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="17dp" />
+
+        <Button
+            android:id="@+id/btnSelectDate5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gestionest"
+            android:onClick="frmManElimEst"
+            android:text="Eliminar Estudiantes"
+            android:textColor="#FDFDFD"
+            app:backgroundTint="@null"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="17dp" />
+
+        <Button
+            android:id="@+id/button14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gestionest"
+            android:onClick="frmManAsignarEstudiantePadre"
+            android:text="Asignar Padres a Estudiantes"
+            android:textColor="#FDFDFD"
+            app:backgroundTint="@null" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="78dp" />
+
+        <Button
+            android:id="@+id/button18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FD9A00"
+            android:onClick="Regresar"
+            android:text="Regresar" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

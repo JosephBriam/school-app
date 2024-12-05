@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vistas.PlataformaDocenteActivity">
+
+    <ImageView
+        android:id="@+id/imageView33"
+        android:layout_width="490dp"
+        android:layout_height="815dp"
+        android:alpha="0.95"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fondo_docente" />
+
+    <LinearLayout
+        android:layout_width="382dp"
+        android:layout_height="687dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.636">
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            app:srcCompat="@drawable/palasatenea" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DOCENTE"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bienvenido"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EA7903"
+            android:backgroundTint="#E4EA7903"
+            android:drawableTint="#00FF9A05"
+            android:text="Académico"
+            android:textColor="#F8F5F5"
+            android:textColorLink="#F4E9E9"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="57dp"
+                android:layout_height="48dp"
+                app:srcCompat="@drawable/curso" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cursos"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="119dp"
+                android:layout_height="47dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btnAdmiCursos"
+                android:layout_width="156dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#673AB7"
+                android:onClick="VerCursos"
+                android:text="Mis Cursos"
+                android:textAlignment="center"
+                android:textColorLink="#033a8c" />
+
+            <Space
+                android:layout_width="13dp"
+                android:layout_height="47dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="62dp"
+                android:layout_height="48dp"
+                app:srcCompat="@drawable/asistencia" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="158dp"
+                android:layout_height="wrap_content"
+                android:text="Informe de asistencias"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnAdmiAsistencias"
+                android:layout_width="145dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#033a8c"
+                android:onClick="InformeAsistencia"
+                android:text="Asistencias" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="46dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EA7903"
+            android:backgroundTint="#E4EA7903"
+            android:text="Comunicación"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="11dp" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Redes Sociales"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/btnFb"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#00FFFFFF"
+                android:onClick="openFacebook"
+                app:srcCompat="@drawable/fb" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/btnIg"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#00FFFFFF"
+                android:onClick="openInstagram"
+                app:srcCompat="@drawable/ig" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/btnYt"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#00FFFFFF"
+                android:onClick="openYouTube"
+                app:srcCompat="@drawable/yt" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="17dp" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Anuncios"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="11dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btnViewAnuncio"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#124A9B"
+                android:onClick="VerAnuncios"
+                android:text="Ver Anuncios"
+                android:textColorLink="#033a8c" />
+
+            <Space
+                android:layout_width="41dp"
+                android:layout_height="20dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btnNewAnuncio"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#124A9B"
+                android:onClick="CrearAnuncios"
+                android:text="Crear Anuncio" />
+
+            <Space
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="14dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btnInicioPA"
+                android:layout_width="131dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#124A9B"
+                android:lineSpacingExtra="96sp"
+                android:onClick="RegresarPaginaAnterior"
+                android:text="Inicio" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Ie_Palas_App</string>
+
+    <string-array name="listaCursos">
+        <item>Matemáticas</item>
+        <item>Deportes</item>
+        <item>Letras</item>
+        <item>Ciencias</item>
+        <item>Inglés</item>
+    </string-array>
+
+
+    <!-- Array para el Spinner de grados -->
+    <string-array name="grados_array">
+        <item>Primero</item>
+        <item>Segundo</item>
+        <item>Tercero</item>
+        <item>Cuarto</item>
+        <item>Quinto</item>
+        <item>Sexto</item>
+    </string-array>
+
+    <string-array name="asistencia_options">
+        <item>Asistió</item>
+        <item>Tarde</item>
+        <item>Faltó</item>
+    </string-array>
+</resources>

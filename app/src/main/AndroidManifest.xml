@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_palas_atenea_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_palas_atenea_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Ie_Palas_App"
+        tools:targetApi="31">
+        <activity
+            android:name=".vistas.frmAsigPadreEstu"
+            android:exported="false" />
+        <activity
+            android:name=".vistas.frmGestionDirecciones"
+            android:exported="false" />
+        <activity
+            android:name=".vistas.frmShowMap"
+            android:exported="false" />
+        <activity
+            android:name=".vistas.frmListarLugar"
+            android:exported="false" />
+        <activity
+            android:name=".vistas.frmInsertarLugar"
+            android:exported="false" />
+        <activity
+            android:name=".vistas.frmRegEst"
+            android:exported="false" />
+        <activity
+            android:name=".vistas.frmRegDoc"
+            android:exported="false" />
+        <activity
+            android:name=".vistas.frmRegCur"
+            android:exported="false" />
+        <activity
+            android:name=".vistas.frmModEst"
+            android:exported="false" />
+        <activity
+            android:name=".vistas.frmModDoc"
+            android:exported="false" />
+        <activity
+            android:name=".vistas.frmModCur"
+            android:exported="false" />
+        <activity
+            android:name=".vistas.frmListEst"
+            android:exported="false" />
+        <activity
+            android:name=".vistas.frmListDoc"
+            android:exported="false" />
+        <activity
+            android:name=".vistas.frmListCur"
+            android:exported="false" />
+        <activity
+            android:name=".vistas.frmEliEst"
+            android:exported="false" />
+        <activity
+            android:name=".vistas.frmEliDoc"
+            android:exported="false" />
+        <activity
+            android:name=".vistas.frmEliCur"
+            android:exported="false" />
+        <activity
+            android:name=".vistas.frmEliApo"
+            android:exported="false" />
+        <activity
+            android:name=".vistas.frmModApo"
+            android:exported="false" />
+        <activity
+            android:name=".vistas.frmListApo"
+            android:exported="false" />
+        <activity
+            android:name=".vistas.frmRegApo"
+            android:exported="false" />
+        <activity
+            android:name=".vistas.CrudApoderados"
+            android:exported="false" />
+        <activity
+            android:name=".vistas.CrudCursos"
+            android:exported="false" />
+        <activity
+            android:name=".vistas.CrudDocentes"
+            android:exported="false" />
+        <activity
+            android:name=".vistas.CrudEstudiantes"
+            android:exported="false" />
+        <activity
+            android:name=".vistas.SesionAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".vistas.CrudsEsCuDoPf"
+            android:exported="false" />
+        <activity
+            android:name=".vistas.CursosPadreActivity"
+            android:exported="false" />
+        <activity
+            android:name=".vistas.PlataformaPadreActivity"
+            android:exported="false" />
+        <activity
+            android:name=".vistas.SesionPadreActivity"
+            android:exported="false" />
+        <activity
+            android:name=".vistas.InformeAsistencia_admin"
+            android:exported="false" />
+        <activity
+            android:name=".vistas.CrearAnuncio_admin"
+            android:exported="false" />
+        <activity
+            android:name=".vistas.AnuncioE"
+            android:exported="false" />
+        <activity
+            android:name=".vistas.Select_Cursos_Grado_Asistencia_Admin"
+            android:exported="false" />
+        <activity
+            android:name=".vistas.MenuAsistencia"
+            android:exported="false" />
+        <activity
+            android:name=".vistas.CursosEstudiante"
+            android:exported="false" />
+        <activity
+            android:name=".vistas.formAsistencias"
+            android:exported="false" />
+        <activity
+            android:name=".vistas.PlataformaEstudianteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".vistas.SesionEstudianteActivity"
+            android:exported="false" /> <!-- CambiarContrasenaActivity -->
+        <activity
+            android:name=".vistas.CambiarContrasenaActivity"
+            android:exported="false" /> <!-- PlataformaDocenteActivity -->
+        <activity
+            android:name=".vistas.PlataformaDocenteActivity"
+            android:exported="false" /> <!-- SesionDocente -->
+        <activity
+            android:name=".vistas.SesionDocente"
+            android:exported="true" /> <!-- PantallaPrincipalActivity (ahora es la actividad principal con exported=true) -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDOcStNwJCquyJipOjRBfQySAnplvrwUYo" />
+
+        <activity
+            android:name=".vistas.PantallaPrincipalActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

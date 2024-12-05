@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <cloud-backup>
+        <!-- Incluye o excluye los elementos que deseas respaldar en la nube aquí -->
+        <!-- Por ejemplo:
+        <include>com.example.myapp</include>
+        <exclude>com.example.myapp.unwanted</exclude>
+        -->
+    </cloud-backup>
+    <device-transfer>
+        <!-- Incluye o excluye los elementos que deseas transferir entre dispositivos aquí -->
+        <!-- Por ejemplo:
+        <include>com.example.myapp</include>
+        <exclude>com.example.myapp.unwanted</exclude>
+        -->
+    </device-transfer>
+</data-extraction-rules>

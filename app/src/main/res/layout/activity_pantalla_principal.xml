@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vistas.PantallaPrincipalActivity">
+
+    <LinearLayout
+        android:layout_width="431dp"
+        android:layout_height="733dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:textAlignment="center"
+                android:tintMode="add"
+                app:srcCompat="@drawable/cole" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="614dp"
+                android:layout_gravity="center"
+                android:alpha="6"
+                android:background="#54FFFFFF">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="422dp"
+                    android:layout_height="142dp"
+                    android:layout_marginTop="30dp"
+                    app:srcCompat="@drawable/palasatenea" />
+
+                <Button
+                    android:id="@+id/btnAdministrador"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="60dp"
+                    android:backgroundTint="#673AB7"
+                    android:onClick="docente"
+                    android:text="Docente"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/button9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="0dp"
+                    android:backgroundTint="#0C2172"
+                    android:onClick="administrador"
+                    android:text="Administrador"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/btnEstudiante"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="120dp"
+                    android:backgroundTint="#FF9800"
+                    android:onClick="estudiante"
+                    android:text="Estudiante"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btnPadre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="170dp"
+                    android:backgroundTint="#2C80EE"
+                    android:onClick="padre"
+                    android:text="Padre de Familia"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/button21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#E23E3E"
+                    android:onClick="salir"
+                    android:text="SALIR" />
+
+            </FrameLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
